@@ -1,0 +1,12 @@
+function doGet(e) {
+ var t=e.parameter.d;
+    //var hoja = SpreadsheetApp.openById('1R8T6j27dzzImSJgd78vTO6M8D6ROP8lZu-Ucxfii0Yw').getActiveSheet();
+    var hoja = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Hoja 1');
+  var ultimo = hoja.getLastRow();
+  var fh=new Date();
+
+  hoja.getRange(ultimo + 1, 1).setValue(new Date());
+  hoja.getRange(ultimo + 1, 2).setValue(t);
+  
+  return ContentService.createTextOutput("Datos recibidos");
+}
