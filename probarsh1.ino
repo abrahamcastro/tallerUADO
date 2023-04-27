@@ -4,7 +4,7 @@
 
 #define ON_Board_LED 2  //--> Defining an On Board LED, used for indicators when the process of connecting to a wifi router
 
-const char* ssid = "SSID"; //--> Your wifi name or SSID.
+const char* ssid = "Red"; //--> Your wifi name or SSID.
 const char* password = "password"; //--> Your wifi password.
 
 
